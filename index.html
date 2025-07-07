@@ -1,0 +1,641 @@
+<!-- #F39200 1
+#4FC1EA 1
+#444F60 1
+#FBFBFB 1
+#EFF4F7
+#444F60 1
+#66676B 1
+Roboto -->
+<!DOCTYPE html>
+<html class="has-background-white" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <style>
+      :root {
+        /* #4FC1EA */
+        --bulma-primary-h: 196;
+        --bulma-primary-s: 79%;
+        --bulma-primary-l: 61%;
+        /* #F39200 */
+        --bulma-link-h: 36;
+        --bulma-link-s: 100%;
+        --bulma-link-l: 48%;
+        /* #444F60 */
+        --bulma-info-h: 216;
+        --bulma-info-s: 17%;
+        --bulma-info-l: 32%;
+        /* #66676B */
+        --bulma-success-h: 228;
+        --bulma-success-s: 2%;
+        --bulma-success-l: 41%;
+        /* #EFF4F7 */
+        --bulma-danger-h: 202;
+        --bulma-danger-s: 33%;
+        --bulma-danger-l: 95%;
+
+        --bulma-warning-h: 221;
+        --bulma-warning-s: 14%;
+        --bulma-warning-l: 71%;
+      }
+      @media screen and (min-width: 1024px) {
+        .humburger {
+          display: block;
+        }
+      }
+      .is-480x480 {
+        height: 480px;
+        width: 480px;
+      }
+      .is-flex .border {
+        border: 1px solid hsl(202, 33%, 95%) !important;
+      }
+      .orange_line {
+        border-radius: 20px;
+        width: 90px;
+        height: 2px;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+      }
+      .flex-g10 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .padding-150 {
+        padding: 150px;
+      }
+      .padding-b-100 {
+        padding-bottom: 100px;
+      }
+      .padding-t-100 {
+        padding-top: 100px;
+      }
+      .max-width {
+        max-width: 400px;
+      }
+      .max-width-200 {
+        max-width: 200px;
+      }
+      .jus-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .border {
+        border: 1px solid hsl(202, 33%, 95%) !important;
+        padding: 20px;
+      }
+      .border-radius {
+        border-radius: 50%;
+      }
+      .gap {
+        gap: 10px;
+      }
+      .gap30 {
+        gap: 30px;
+      }
+      .max-width700 {
+        max-width: 700px;
+      }
+      .is-one-fifth > a {
+        display: block;
+      }
+      .columns:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar has-background-white-bis px-6 py-2"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img class="image is-96x96" src="images/logo-dark.svg" alt="" />
+          <a
+            role="button"
+            class="m-0 navbar-burger humburger"
+            aria-label="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger is-link"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span class="" aria-hidden="true"></span>
+          <span class="" aria-hidden="true"></span>
+          <span class="" aria-hidden="true"></span>
+          <span class="" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                class="has-text-weight-medium is-size-7 has-text-grey-light"
+                href="#"
+                >Features</a
+              >
+              <a
+                class="has-text-weight-medium is-size-7 has-text-grey-light"
+                href="#"
+                >Pricing</a
+              >
+              <a class="has-text-weight-medium is-size-7 has-text-grey-light">
+                Log in
+              </a>
+              <a
+                class="px-4 is-size-7 has-text-weight-medium button is-link has-text-white"
+              >
+                Sign up
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="px-6 py-2 has-background-white-bis pt-6">
+      <div
+        class="is-align-items-center is-justify-content-space-between columns"
+      >
+        <div class="column is-3">
+          <h1 class="is-size-3 has-text-info has-text-weight-bold mb-4">
+            Manage and deploy your apps seamlessly.
+          </h1>
+          <p class="is-size-7 mb-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat
+            recusandae
+          </p>
+          <div class="is-flex-direction-row">
+            <button
+              class="button mb-2 mr-2 is-primary py-1 px-4 has-text-weight-medium is-size-7 has-text-white"
+            >
+              Get Started
+            </button>
+            <button
+              class="button is-danger is-outlined has-text-info py-1 px-4 has-text-weight-medium is-size-7"
+            >
+              Discover
+            </button>
+          </div>
+        </div>
+        <div class="column"></div>
+        <img
+          class="column is-8 image is-480x480"
+          src="images/worker.svg"
+          alt=""
+        />
+      </div>
+      <div class="is-flex is-justify-content-center">
+        <img class="image is-64x64 mr-4" src="images/systek.svg" alt="" />
+        <img class="image is-64x64 mr-4" src="images/tribe.svg" alt="" />
+        <img class="image is-64x64 mr-4" src="images/kromo.svg" alt="" />
+        <img class="image is-64x64 mr-4" src="images/infinite.svg" alt="" />
+        <img class="image is-64x64 mr-4" src="images/gutwork.svg" alt="" />
+      </div>
+    </div>
+    <div class="padding-150">
+      <div class="pb-6">
+        <h1 class="has-text-black is-size-3 flex">Great Power Comes</h1>
+        <p class="flex mb-3">with great Responsability</p>
+        <div class="orange_line has-background-link m-auto"></div>
+      </div>
+      <div
+        class="columns is-justify-content-center is-align-items-center"
+      >
+        <div
+          class="column has-text-centered border mb-3 is-danger is-one-quarter has-background-white py-5 px-5 ml-3"
+        >
+          <h1 class="is-size-6 has-text-info mb-4">App Builder</h1>
+          <img class="image is-64x64 m-auto" src="images/web.svg" alt="" />
+          <p class="m-auto is-size-7 has-text-warning has-text-weight-normal">
+            This is some cool explanatory text that is on two rows
+          </p>
+          <button
+            class="button is-primary py-1 px-4 has-text-weight-medium is-size-7 has-text-white"
+          >
+            Free Trial
+          </button>
+        </div>
+        <div
+          class="column has-text-centered mb-3 is-danger border is-one-quarter has-background-white py-5 px-5 ml-3"
+        >
+          <h1 class="is-size-6 has-text-info mb-4 ">Cloud integration</h1>
+          <img class="image is-64x64 m-auto" src="images/rocket.svg" alt="" />
+          <p class=" m-auto is-size-7 has-text-warning has-text-weight-normal">
+            This is some cool explanatory text that is on two rows
+          </p>
+          <button
+            class="button is-primary py-1 px-4 has-text-weight-medium is-size-7 has-text-white"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          class="column has-text-centered mb-3 border is-danger is-outlined is-one-quarter has-background-white py-5 px-5 ml-3"
+        >
+          <h1 class="is-size-6 has-text-info mb-4">Addins & Plugins</h1>
+          <img
+            class="image is-64x64 m-auto"
+            src="images/light-bulb.svg"
+            alt=""
+          />
+          <p class="m-auto is-size-7 has-text-warning has-text-weight-normal">
+            This is some cool explanatory text that is on two rows
+          </p>
+          <button
+            class="button is-primary py-1 px-4 has-text-weight-medium is-size-7 has-text-white"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="padding-150 has-background-white-bis">
+      <div class="padding-b-100">
+        <h1 class="has-text-black is-size-3 flex">Awesome Features</h1>
+        <p class="flex mb-3">To make you super happy</p>
+        <div class="orange_line has-background-link m-auto"></div>
+      </div>
+      <div class="columns is-justify-content-center is-align-items-center">
+        <div class="column is-one-third">
+          <h1 class="has-text-black is-size-3">Connect with people</h1>
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            rerum facilis natus nisi sed, omnis voluptatem laboriosam cum vitae
+            enim porro numquam nulla harum, libero totam praesentium dolore
+            explicabo molestiae.
+          </p>
+        </div>
+        <img
+          class="column is-two-fifths image is-480x480"
+          src="images/feature-1.webp"
+          alt=""
+        />
+      </div>
+      <div class="columns is-justify-content-center is-align-items-center">
+        <img
+          class="column is-two-fifths image is-480x480"
+          src="images/feature-2.webp"
+          alt=""
+        />
+        <div class="column is-one-third">
+          <h1 class="has-text-black is-size-3">Connect with people</h1>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            aliquid eius commodi cupiditate, nihil et qui suscipit sit
+            recusandae illo laboriosam officia consequuntur unde delectus
+            maiores optio quis modi deleniti!
+          </p>
+        </div>
+      </div>
+      <div class="columns is-justify-content-center is-align-items-center">
+        <div class="column is-one-third">
+          <h1 class="has-text-black is-size-3">An intuitive app</h1>
+          <p class="max-width">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            aliquid eius commodi cupiditate, nihil et qui suscipit sit
+            recusandae illo laboriosam officia consequuntur unde delectus
+            maiores optio quis modi deleniti!
+          </p>
+        </div>
+        <img
+          class="column is-two-fifths image is-480x480"
+          src="images/workers.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="padding-150">
+      <div class="padding-b-100">
+        <h1 class="has-text-black is-size-3 flex">Wait, there's more</h1>
+        <p class="flex mb-3">To make you super happy</p>
+        <div class="orange_line has-background-link m-auto"></div>
+      </div>
+      <div class="columns is-align-items-center is-8 is-multiline mb-6">
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-github fa-xl border border-radius"></i>
+          <h1>Github</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-bitbucket fa-xl border border-radius"></i>
+          <h1 class="">Bitbucket</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-slack fa-xl border border-radius"></i>
+          <h1>Slack</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-npm fa-xl border border-radius"></i>
+          <h1>Npm</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-js fa-xl border border-radius"></i>
+          <h1>Javascript</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-node-js fa-xl border border-radius"></i>
+          <h1>Node.js</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-angular fa-xl border border-radius"></i>
+          <h1>Angular</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-google fa-xl border border-radius"></i>
+          <h1>Google</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-python fa-xl border border-radius"></i>
+          <h1>Python</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-wordpress fa-xl border border-radius"></i>
+          <h1>WordPress</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-android fa-xl border border-radius"></i>
+          <h1>Android</h1>
+          <p>Some feature text</p>
+        </div>
+        <div class="column is-one-quarter">
+          <i class="fa-brands fa-apple fa-xl border border-radius"></i>
+          <h1>Apple</h1>
+          <p>Some feature text</p>
+        </div>
+      </div>
+      <div
+        class="columns is-justify-content-center is-align-items-center gap30"
+      >
+        <div
+          class="column border has-backgrund-white is-danger is-outlined mb-4"
+        >
+          <p class="has-text-info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            corporis vitae excepturi officiis quam iste aliquid quidem. Amet id
+            enim et repellendus. Numquam porro, fugit repudiandae velit mollitia
+            dolorum tempora.
+          </p>
+          <div class="">
+            <img
+              class="image is-32x32 border-radius"
+              src="images/1.webp"
+              alt=""
+            />
+            <div class="content">
+              <h1 class="is-size-7 has-text-info">Irma Walters</h1>
+              <p>Accountant</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column border has-backgrund-white is-danger is-outlined mb-4"
+        >
+          <p class="has-text-info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            corporis vitae excepturi officiis quam iste aliquid quidem. Amet id
+            enim et repellendus. Numquam porro, fugit repudiandae velit mollitia
+            dolorum tempora.
+          </p>
+          <div class="">
+            <img
+              class="image is-32x32 border-radius"
+              src="images/2.webp"
+              alt=""
+            />
+            <div class="content">
+              <h1 class="is-size-7 has-text-info">John Bradley</h1>
+              <p>Financial Analyst</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column border has-backgrund-white is-danger is-outlined mb-4"
+        >
+          <p class="has-text-info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            corporis vitae excepturi officiis quam iste aliquid quidem. Amet id
+            enim et repellendus. Numquam porro, fugit repudiandae velit mollitia
+            dolorum tempora.
+          </p>
+          <div class="">
+            <img
+              class="image is-32x32 border-radius"
+              src="images/3.webp"
+              alt=""
+            />
+            <div class="content">
+              <h1 class="is-size-7 has-text-info">Gray Blackman</h1>
+              <p>HR Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="padding-t-100">
+        <div class="padding-b-100">
+          <h1 class="has-text-black is-size-3 flex">Get Started</h1>
+          <p class="flex mb-3">Choose one of our plans</p>
+          <div class="orange_line has-background-link m-auto"></div>
+        </div>
+        <div
+          class="columns is-align-items-center is-justify-content-center has-background-white"
+        >
+          <div class="has-text-centered p-6 mb-3 column border is-align-items-center">
+            <h1 class="has-text-weight-bold has-text-info">
+              Starter
+            </h1>
+            <img class="m-auto image is-128x128" src="images/1.svg" alt="" />
+            <h1
+              class="has-text-weight-extrabold is-size-3 has-text-info"
+            >
+              <sup>$</sup>0
+            </h1>
+            <p class="">per month</p>
+            <p class="mb-3">
+              Sign up,get some awesome features and get started now
+            </p>
+            <button class=" border is-responsive button has-text-black is-white">Get Started</button>
+          </div>
+          <div class="has-text-centered p-6 mb-3 column border is-align-items-center">
+            <h1 class="has-text-weight-bold has-text-info">
+              Pro
+            </h1>
+            <img class="m-auto image is-128x128" src="images/2.svg" alt="" />
+            <h1
+              class="has-text-weight-extrabold is-size-3 has-text-info"
+            >
+              <sup>$</sup>15
+            </h1>
+            <p class="">per month</p>
+            <p class="mb-3">
+              Sign up,get some awesome features and get started now
+            </p>
+            <button class="button is-primary is-size-7 has-text-white">
+              Get Started
+            </button>
+          </div>
+          <div class="has-text-centered p-6 mb-3 column border is-align-items-center">
+            <h1 class="has-text-weight-bold has-text-info">
+              Business
+            </h1>
+            <img
+              class="m-auto image has-text-white is-128x128"
+              src="images/3.svg"
+              alt=""
+            />
+            <h1
+              class= has-text-weight-extrabold is-size-3 has-text-info"
+            >
+              <sup>$</sup>30
+            </h1>
+            <p class="">per month</p>
+            <p class="mb-3">
+              Sign up,get some awesome features and get started now
+            </p>
+            <button class="border is-responsive button has-text-black is-white">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-150 has-background-danger">
+      <div class="padding-b-100">
+        <h1 class="has-text-black is-size-3 flex">Drop us a line or two</h1>
+        <p class="flex mb-3">We'd love to hear from You</p>
+        <div class="orange_line has-background-link m-auto"></div>
+      </div>
+      <div class="is-flex is-flex-direction-column">
+        <form class="box flex has-background-danger">
+          <div class="field">
+            <div class="control">
+              <input
+                class="input has-text-grey has-background-white"
+                placeholder="First Name *"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input
+                class="input has-text-grey has-background-white"
+                placeholder="Last Name *"
+              />
+            </div>
+          </div>
+        </form>
+        <form class="box flex has-background-danger">
+          <div class="field">
+            <div class="control">
+              <input
+                class="input has-text-grey has-background-white"
+                placeholder="Email *"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input
+                class="input has-text-grey has-background-white"
+                placeholder="Company"
+              />
+            </div>
+          </div>
+        </form>
+        <textarea
+          class="textarea has-background-white"
+          placeholder="10 lines of textarea"
+          rows="10"
+        ></textarea>
+        <button
+          class="is-align-self-flex-end button is-primary is-size-7 has-text-white max-width-200"
+        >
+          Send Message
+        </button>
+      </div>
+    </div>
+    <div class="columns padding-150 has-background-info">
+      <div class="column is-one-fifth">
+        <img style="width: 128px;" class="image" src="images/logo.svg" alt="" />
+      </div>
+      <div class="column is-one-fifth">
+        <h1 class="has-text-white mb-5">PRODUCT</h1>
+        <a class="has-text-danger mb-3" href="#">Discover features</a>
+        <a class="has-text-danger mb-3" href="#">Why choose our aroduct ?</a>
+        <a class="has-text-danger mb-3" href="#">Comaare features</a>
+        <a class="has-text-danger mb-3" href="#">Our Roadmaa</a>
+        <a class="has-text-danger mb-3" href="#">Request features</a>
+      </div>
+      <div class="column is-one-fifth">
+        <h1 class="has-text-white mb-4">Docs</h1>
+        <a class="has-text-danger mb-3" href="#">Get Started</a>
+        <a class="has-text-danger mb-3" href="#">User guides</a>
+        <a class="has-text-danger mb-3" href="#">Admin guide</a>
+        <a class="has-text-danger mb-3" href="#">Developers</a>
+      </div>
+      <div class="column is-one-fifth">
+        <h1 class="has-text-white mb-4">BLOGROLL</h1>
+        <a class="has-text-danger mb-3" href="#">Latest News</a>
+        <a class="has-text-danger mb-3" href="#">Tech articles</a>
+        <a class="has-text-danger mb-3" href="#">Video Blog</a>
+      </div>
+      <div class="column is-one-fifth">
+        <h1 class="has-text-white mb-4">FOLLOW US</h1>
+        <a class="has-text-danger mb-3" href="#">Latest News</a>
+        <a class="mb-3 has-text-danger" href="#"
+          >Made with
+          <svg
+            width="75"
+            height="75"
+            viewBox="0 0 640 160"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+              fill="white"
+              class="bd-svg-black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+              fill="white"
+            /></svg>
+          </a>
+      </div>
+    </div>
+  </body>
+</html>
