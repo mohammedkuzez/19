@@ -41,6 +41,9 @@ Roboto -->
         --bulma-warning-s: 14%;
         --bulma-warning-l: 71%;
       }
+      .input {
+        --bulma-input-placeholder-color: hsl(222, 14%, 71%);
+      }
       @media screen and (min-width: 1024px) {
         .humburger {
           display: block;
@@ -78,6 +81,9 @@ Roboto -->
       }
       .padding-t-100 {
         padding-top: 100px;
+      }
+      .padding0 {
+        padding: 0;
       }
       .max-width {
         max-width: 400px;
@@ -536,16 +542,16 @@ Roboto -->
         <div class="orange_line has-background-link m-auto"></div>
       </div>
       <div class="is-flex is-flex-direction-column">
-        <form class="box flex has-background-danger">
-          <div class="field">
+        <form class="box padding0 columns mb-5 has-background-danger">
+          <div class="column padding0 field is-half ml-2">
             <div class="control">
               <input
-                class="input has-text-grey has-background-white"
+                class="input has-test-black has-background-white"
                 placeholder="First Name *"
               />
             </div>
           </div>
-          <div class="field">
+          <div class="column padding0 field is-half ml-2">
             <div class="control">
               <input
                 class="input has-text-grey has-background-white"
@@ -554,8 +560,8 @@ Roboto -->
             </div>
           </div>
         </form>
-        <form class="box flex has-background-danger">
-          <div class="field">
+        <form class="box padding0 columns mb-6 has-background-danger">
+          <div class="column padding0 field is-half ml-2">
             <div class="control">
               <input
                 class="input has-text-grey has-background-white"
@@ -563,7 +569,7 @@ Roboto -->
               />
             </div>
           </div>
-          <div class="field">
+          <div class="column padding0 field is-half ml-2">
             <div class="control">
               <input
                 class="input has-text-grey has-background-white"
@@ -573,12 +579,12 @@ Roboto -->
           </div>
         </form>
         <textarea
-          class="textarea has-background-white"
+          class="textarea has-background-white mb-4"
           placeholder="10 lines of textarea"
           rows="10"
         ></textarea>
         <button
-          class="is-align-self-flex-end button is-primary is-size-7 has-text-white max-width-200"
+          class="is-align-self-flex-end button is-primary  has-text-white max-width-200"
         >
           Send Message
         </button>
